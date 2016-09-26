@@ -1,0 +1,12 @@
+<h1>{{vm.movie.title}}</h1>
+<h3>Director: {{vm.movie.director}}</h3>
+<hr>
+<h3>List of Actors</h3>
+<p>
+    <a href="/addActorToMovie/{{vm.movie._id}}">Add actor...</a>
+</p>
+<ul>
+    <li ng-repeat='a in vm.movie.actors'>
+        {{a.firstName}} {{a.lastName}}
+    </li>
+</ul>

@@ -1,0 +1,9 @@
+<h1>Which actor would you like to add to the movie???</h1>
+
+<ul>
+    <li ng-repeat='a in vm.actors'>
+        <button type="button" class="btn btn-success btn-xs" ng-click="vm.addActorToMovie(a._id)">Add</button>
+
+        {{a.firstName}} {{a.lastName}}
+    </li>
+</ul>
